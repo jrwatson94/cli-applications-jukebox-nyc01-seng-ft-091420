@@ -19,7 +19,7 @@ def help
   puts "- play : lets you choose a song to play"
   puts "- exit : exits this program"
   puts "Please enter a command:"
-  input = gets.chomp
+  input = gets.strip
 end
 
 def list (song_array)
@@ -33,3 +33,8 @@ end
 def exit
   puts "Goodbye!"
 end
+
+def run(song_array)
+  input = gets.strip
+  if input == "help"
+    
