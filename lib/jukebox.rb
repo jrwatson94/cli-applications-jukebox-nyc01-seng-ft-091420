@@ -30,4 +30,4 @@ def play(choice)
   puts "Playing #{songs[choice + 1]}"
 end
 
-play(3)
+list
