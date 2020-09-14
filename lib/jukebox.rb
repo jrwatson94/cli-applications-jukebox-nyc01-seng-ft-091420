@@ -34,14 +34,14 @@ def play(song_array)
         puts "Playing #{song_array[i]}"
       end
     end
-  elsif song_choice.to_i <= song_array.length
-    puts "Playing #{song_array[song_choice.to_i]}"
+  elsif song_choice.to_i <= song_array.length 
+    puts "Playing #{song_array[song_choice.to_i - 1]}"
   else
     puts "Invalid input, please try again"
   end
 end
 
-def exit_program
+def exit_jukebox
   puts "Goodbye!"
 end
 
@@ -59,7 +59,7 @@ def run(song_array)
     elsif input == "play"
       play(song_array)
     elsif input == "exit"
-      exit_program
+      exit_jukebox
       flag = true
     else
       help
