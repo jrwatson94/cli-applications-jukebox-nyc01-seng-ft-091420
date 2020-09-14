@@ -18,7 +18,6 @@ def help
   puts "- list : displays a list of songs you can play"
   puts "- play : lets you choose a song to play"
   puts "- exit : exits this program"
-  puts "Please enter a command:"
   input = gets.strip
 end
 
@@ -38,6 +37,7 @@ end
 def run(song_array)
   
   puts "Welcome to the CLI JukeBox!"
+  puts"Please enter a command:"
   flag = false
   while flag == false
     input = gets.strip
