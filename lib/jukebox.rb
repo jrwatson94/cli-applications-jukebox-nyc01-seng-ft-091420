@@ -32,7 +32,7 @@ def play(song_array)
   if song_array.include? (song_choice)
     song_array.each do |song|
       if song == song_choice
-        puts "Playing #{song_array[song]}"
+        puts "Playing #{song}"
       end
     end
   elsif song_choice.to_i.between?(1,song_array.length)
