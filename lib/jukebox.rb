@@ -35,7 +35,7 @@ def play(song_array)
         puts "Playing #{song_array[i]}"
       end
     end
-  elsif song_choice.to_i.between?(0,) <= song_array.length 
+  elsif song_choice.to_i.between?(1,song_array.length)
     puts "Playing #{song_array[song_choice.to_i - 1]}"
   else
     puts "Invalid input, please try again"
