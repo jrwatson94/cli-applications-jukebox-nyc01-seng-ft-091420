@@ -52,6 +52,7 @@ def run(song_array)
       flag = true
     else
       help
+    end
   end
 end
 
