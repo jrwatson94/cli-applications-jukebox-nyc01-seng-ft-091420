@@ -60,6 +60,7 @@ def run(song_array)
       list(song_array)
     elsif input == "play"
       play(song_array)
+      binding.pry
     elsif input == "exit"
       exit_jukebox
       flag = true
