@@ -32,8 +32,9 @@ def list (song_array)
 end
 
 
-binding.pry
+
 def play(song_array)
+  binding.pry
   puts "Please enter a song name or number:"
   song_choice = gets.strip
   if song_array.include? (song_choice)
