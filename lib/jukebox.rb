@@ -31,6 +31,22 @@ def list (song_array)
   end
 end
 
+def play(song_array)
+  puts "Please enter a song name or number:"
+  song_choice = gets.strip
+  if song_array.include? (song_choice)
+    song_array.each do |song|
+      if song == song_choice
+        puts "Playing #{song}"
+      end
+    end
+  elsif song_choice.to_i.between?(1,song_array.length)
+    puts "Playing #{song_array[song_choice.to_i - 1]}"
+  else
+    puts "Invalid input, please try again"
+  end
+end
+
 
 
 def exit_jukebox
