@@ -9,3 +9,5 @@ def help
   puts "Please enter a command:"
   input = gets.chomp
 end
+
+help
