@@ -30,7 +30,7 @@ def play(choice)
   puts "Playing #{song_array[choice + 1]}"
 end
 
-def exit
+def exit_program
   puts "Goodbye!"
 end
 
@@ -38,17 +38,20 @@ def run(song_array)
   
   puts "Welcome to the CLI JukeBox!"
   puts"Please enter a command:"
-  input = gets.strip
-  if input == "help"
-    help
-  elsif input == "list"
-    list(song_array)
-  elsif input == "play"
-    play(song_array)
-  elsif input == "exit"
-    exit
-  else
-    help
+  flag = false
+  while flag == false
+    input = gets.strip
+    if input == "help"
+      help
+    elsif input == "list"
+      list(song_array)
+    elsif input == "play"
+      play(song_array)
+    elsif input == "exit"
+      exit_program
+      flag = true
+    else
+      help
   end
 end
 
