@@ -31,21 +31,18 @@ def list (song_array)
   end
 end
 
-def play(song_array)
+def play(songs)
   puts "Please enter a song name or number:"
-  song_choice = gets.strip
-  if song_array.include? (song_choice.to_s)
-    song_array.each do |song|
-      if song == song_choice
-        puts "Playing #{song}"
-      end
-    end
-  elsif song_choice.to_i.between?(1,song_array.length)
-    puts "Playing #{song_array[song_choice.to_i - 1]}"
-  else
+  user_response = gets.downcase.chomp 
+  
+  if (1..9).to_a.include?(user_response.to_i)
+    puts "Playing #{songs[user_response.to_i - 1]}"
+    elsif songs.include?(user_response)
+    puts "Playing #{user_response}"
+  else 
     puts "Invalid input, please try again"
-  end
-end
+  end 
+end 
 
 def exit_jukebox
   puts "Goodbye!"
