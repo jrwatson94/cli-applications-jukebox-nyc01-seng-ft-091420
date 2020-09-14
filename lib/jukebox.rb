@@ -1,3 +1,5 @@
+require "pry"
+
 # Add your code here
 songs = [
   "Phoenix - 1901",
@@ -31,6 +33,7 @@ def play(song_array)
     song_array.each do |i|
       if song_array[i] == song_choice
         puts "Playing #{song_array[i]}"
+        binding.pry
       end
     end
   elsif song_choice.to_i <= song_array.length 
