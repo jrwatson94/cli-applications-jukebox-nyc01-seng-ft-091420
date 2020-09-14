@@ -34,7 +34,7 @@ end
 def play(song_array)
   puts "Please enter a song name or number:"
   song_choice = gets.strip
-  if song_array.include? (song_choice)
+  if song_array.include? (song_choice.to_s)
     song_array.each do |song|
       if song == song_choice
         puts "Playing #{song}"
