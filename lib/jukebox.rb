@@ -37,4 +37,14 @@ end
 def run(song_array)
   input = gets.strip
   if input == "help"
+    help
+  elsif input == "list"
+    list(song_array)
+  elsif input == "play"
+    play(song_array)
+  elsif input == "exit"
+    exit
+  else
+    help
+  end
     
