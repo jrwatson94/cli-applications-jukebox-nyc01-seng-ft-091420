@@ -38,7 +38,6 @@ end
 def run(song_array)
   
   puts "Welcome to the CLI JukeBox!"
-  puts"Please enter a command:"
   flag = false
   while flag == false
     input = gets.strip
