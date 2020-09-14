@@ -38,6 +38,7 @@ def play(song_array)
     song_array.each do |song|
       if song == song_choice
         puts "Playing #{song}"
+        puts "Please enter a command:"
       end
     end
   elsif song_choice.to_i.between?(1,song_array.length)
