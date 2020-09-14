@@ -28,6 +28,7 @@ def play(song_array)
   puts "Please enter a song name or number:"
   song_choice = gets.strip
   if song_array.include? (song_choice)
+    binding.pry
     song_array.each do |i|
       if song_array[i] == song_choice
         binding.pry
