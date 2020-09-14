@@ -70,7 +70,7 @@ def run(song_array)
     end
   end
 end
-run(songs)
+#run(songs)
 
 
 
