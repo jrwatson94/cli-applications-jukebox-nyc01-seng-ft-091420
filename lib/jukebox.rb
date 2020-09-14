@@ -31,6 +31,19 @@ def list (song_array)
   end
 end
 
+def play(songs)
+  puts "Please enter a song name or number"
+  input = gets.chomp
+  songs.each_with_index do |song, idx|
+    if input.to_i == (idx+1) || input == song
+      puts "Playing #{song}"
+      break
+    else
+      puts "Invalid input, please try again"
+      break
+    end
+  end
+end
 
 
 def exit_jukebox
