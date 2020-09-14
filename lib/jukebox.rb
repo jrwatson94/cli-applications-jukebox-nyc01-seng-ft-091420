@@ -26,8 +26,9 @@ def list (song_array)
   puts song_array
 end
 
-def play(choice)
-  puts "Playing #{song_array[choice + 1]}"
+def play(song_array)
+  song_choice = gets.strip
+  puts "Playing #{song_array[song_choice + 1]}"
 end
 
 def exit_program
