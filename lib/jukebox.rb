@@ -32,7 +32,6 @@ def play(song_array)
   if song_array.include? (song_choice)
     song_array.each do |song|
       if song == song_choice
-        binding.pry
         puts "Playing #{song_array[i]}"
       end
     end
