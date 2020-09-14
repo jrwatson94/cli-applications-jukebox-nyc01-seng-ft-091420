@@ -23,6 +23,11 @@ def help
 end
 
 def list (song_array)
+  i = 0
+  while i < song_array.length
+    song_array[i] = "#{i+1}. #{song_array[i]}"
+    i += 1
+  end
   puts song_array
 end
 
