@@ -22,12 +22,12 @@ def help
   input = gets.chomp
 end
 
-def list 
-  puts songs
+def list (song_array)
+  puts song_array
 end
 
-def play(choice)
-  puts "Playing #{songs[choice + 1]}"
+def play(song_array,choice)
+  puts "Playing #{song_array[choice + 1]}"
 end
 
-list
+play(songs,4)
