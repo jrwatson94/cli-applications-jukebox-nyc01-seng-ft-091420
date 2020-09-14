@@ -27,7 +27,7 @@ def list (song_array)
 end
 
 def play(song_array)
-  song_choice = gets.strip
+  song_choice = gets.strip.to_i
   puts "Playing #{song_array[song_choice + 1]}"
 end
 
