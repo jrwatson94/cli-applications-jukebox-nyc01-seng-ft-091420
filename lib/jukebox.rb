@@ -28,8 +28,17 @@ end
 def play(song_array)
   puts "Please enter a song name or number:"
   song_choice = gets.strip
-  if song_choice == song
-  puts "Playing #{song_array[song_choice + 1]}"
+  if song_array.include? (song_choice)
+    song_array.each do |i|
+      if song_array[i] == song_choice
+        puts "Playing #{song_array[i]}"
+      end
+    end
+  elsif song_choice.to_i <= song_array.length
+    puts "Playing #{song_array[song_choice.to_i]}"
+  else
+    puts "Invalid input, please try again"
+  end
 end
 
 def exit_program
