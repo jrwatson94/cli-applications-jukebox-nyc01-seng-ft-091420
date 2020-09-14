@@ -35,6 +35,9 @@ def exit
 end
 
 def run(song_array)
+  
+  puts "Welcome to the CLI JukeBox!"
+  puts"Please enter a command:"
   input = gets.strip
   if input == "help"
     help
