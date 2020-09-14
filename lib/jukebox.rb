@@ -33,7 +33,6 @@ def play(song_array)
     song_array.each do |i|
       if song_array[i] == song_choice
         puts "Playing #{song_array[i]}"
-        binding.pry
       end
     end
   elsif song_choice.to_i <= song_array.length 
@@ -60,7 +59,6 @@ def run(song_array)
       list(song_array)
     elsif input == "play"
       play(song_array)
-      binding.pry
     elsif input == "exit"
       exit_jukebox
       flag = true
