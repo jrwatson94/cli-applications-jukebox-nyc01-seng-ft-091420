@@ -13,7 +13,7 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-binding.pry
+
 def help
   puts "I accept the following commands:"
   puts "- help : displays this help message"
@@ -31,6 +31,8 @@ def list (song_array)
   end
 end
 
+
+binding.pry
 def play(song_array)
   puts "Please enter a song name or number:"
   song_choice = gets.strip
