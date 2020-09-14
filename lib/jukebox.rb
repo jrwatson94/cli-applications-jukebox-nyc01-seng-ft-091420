@@ -30,4 +30,6 @@ def play(song_array,choice)
   puts "Playing #{song_array[choice + 1]}"
 end
 
-list(songs)
+def exit
+  puts "Goodbye!"
+end
