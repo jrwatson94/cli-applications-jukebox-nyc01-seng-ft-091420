@@ -48,3 +48,5 @@ def run(song_array)
     help
   end
 end
+
+run(songs)
