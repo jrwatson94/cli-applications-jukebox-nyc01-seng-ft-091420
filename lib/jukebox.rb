@@ -10,4 +10,5 @@ def help
   input = gets.chomp
 end
 
-help
+def list 
+  
